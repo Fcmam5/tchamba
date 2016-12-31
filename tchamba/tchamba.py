@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 import requests
 import string
@@ -13,5 +14,13 @@ def random_chuck_joke():
 
     return data
 
+def random_hex_color():
+    alpha = '0123456789abcdef'
+    hex_color = '#'
+    for i in range(6):
+        hex_color += random.choice(alpha)
+    return hex_color
 
-print random_chuck_joke()
+def random_rgb_color():
+    rgb_color = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+    return rgb_color
