@@ -24,3 +24,9 @@ def random_hex_color():
 def random_rgb_color():
     rgb_color = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
     return rgb_color
+
+def random_pokemon():
+    num = str(random.randint(1,700))
+    data = requests.get('https://pokeapi.co/api/v2/pokemon/'+num).json()
+    my_pokemon = data['forms'][0]['name']
+    return my_pokemon
