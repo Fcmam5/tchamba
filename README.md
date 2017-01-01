@@ -34,7 +34,7 @@ Then import it in your python file
     for i in person:
         print i, person[i]
 
-    # Print a random football team
+    # Print a random football team (Internet connection needed)
     football_team = random_football_team()
     
 ```
