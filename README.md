@@ -26,10 +26,10 @@ Then import it in your python file
     # Print a list of RGB color (ex: [31,12,15])
     print random_rgb_color()
 
-    # Print a random Pokemon name
+    # Print a random Pokemon name (Internet connection needed)
     print random_pokemon()
 
-    # Get a fake person
+    # Get a fake person (Internet connection needed)
     person = random_fake_person()
     for i in person:
         print i, person[i]
