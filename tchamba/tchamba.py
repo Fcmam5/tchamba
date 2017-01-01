@@ -37,3 +37,13 @@ def random_fake_person():
     except Exception:
         person = ""
     return person
+
+def random_football_team():
+
+    num = str(random.randint(1,890))
+    try:
+        football_team = requests.get('http://api.football-data.org/v1/teams/'+num).json()
+        
+    except Exception:
+        football_team = ""
+    return football_team

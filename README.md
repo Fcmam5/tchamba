@@ -33,6 +33,10 @@ Then import it in your python file
     person = random_fake_person()
     for i in person:
         print i, person[i]
+
+    # Print a random football team
+    football_team = random_football_team()
+    
 ```
 
 ## Contributing
@@ -44,6 +48,7 @@ This package is using one of the bests APIs on the Web, like:
 * [ChuckNorris.io](https://chucknorris.io)
 * [PokeAPI](https://pokeapi.co)
 * [NameFake](http://namefake.com/api)
+* [football teams api](http://api.football-data.org)
 
 ## License
 MIT licensed Done by Fortas Abdeldjalil and all [these awesome contributers](https://github.com/Fcmam5/tchamba/graphs/contributors).
