@@ -28,6 +28,11 @@ Then import it in your python file
 
     # Print a random Pokemon name
     print random_pokemon()
+
+    # Get a fake person
+    person = random_fake_person()
+    for i in person:
+        print i, person[i]
 ```
 
 ## Contributing
@@ -38,6 +43,7 @@ I think that we need something cool, funny like this :smile: to use it in our pr
 This package is using one of the bests APIs on the Web, like:
 * [ChuckNorris.io](https://chucknorris.io)
 * [PokeAPI](https://pokeapi.co)
+* [NameFake](http://namefake.com/api)
 
 ## License
 MIT licensed Done by Fortas Abdeldjalil and all [these awesome contributers](https://github.com/Fcmam5/tchamba/graphs/contributors).
