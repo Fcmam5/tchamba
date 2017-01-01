@@ -30,3 +30,19 @@ def random_pokemon():
     data = requests.get('https://pokeapi.co/api/v2/pokemon/'+num).json()
     my_pokemon = data['forms'][0]['name']
     return my_pokemon
+
+def random_fake_persons():
+    
+          num = str(random.randrange(0,9000))
+          person =requests.get('http://api.namefake.com/'+num).json()
+              
+          print "name : " +str(person['name'])
+          print " address : " + str(person['address'])
+          print " birth_data : " + str(person['birth_data'])
+          print " height : " + str(person['height'])
+          print " weight : " + str(person['weight'])
+          print " eye : " + str(person['eye'])
+          print " color : " + str(person['color'])
+          print " hair : " + str(person['hair'])
+          print " blood : " + str(person['blood'] ) 
+          print " sport : " + str(person['sport'])
