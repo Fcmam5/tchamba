@@ -31,7 +31,7 @@ def random_pokemon():
     my_pokemon = data['forms'][0]['name']
     return my_pokemon
 
-def random_fake_persons():
+def random_fake_person():
     try:
         person =requests.get('http://api.namefake.com/random').json()
     except Exception:
