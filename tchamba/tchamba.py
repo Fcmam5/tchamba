@@ -3,8 +3,29 @@ import random
 import requests
 import string
 
-def random_char():
-    return random.choice(string.letters)
+# returns a random char from the concatenation of ascii_lowercase and ascii_uppercase
+def random_letter():
+    return random.choice(string.ascii_letters) 
+
+# returns a random char from: 'abcdefghijklmnopqrstuvwxyz'
+def random_lowercase():
+    return random.choice(string.ascii_lowercase)
+
+# returns a random char from: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+def random_uppercase():
+    return random.choice(string.ascii_uppercase)
+
+# returns a random char from: '0123456789'
+def random_digit():
+    return random.choice(string.digits)
+
+# returns a random char from: '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~' 
+def random_punctuation():
+    return random.choice(string.punctuation)
+
+# returns a random char from the concatenation of digits, ascii_letters, punctuation, and whitespace.
+def random_printable():
+    return random.choice(string.printable)
 
 def random_chuck_joke():
     try:
