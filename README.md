@@ -9,13 +9,29 @@ First install the **tchamba** package
 ```bash
   pip install tchamba
 ```
-
-Then import it in your python file
+## How to use
+Import **tchamba** in your python file and use any of the functions :
 ```python
     from tchamba import *
 
-    # Print a random character
-    print random_char()
+    # Print a random letter (Uppercase and undercase letters included)
+    print random_letter()
+
+    # Print a random lowercase letter
+    print random_lowercase()
+
+    # Print a random uppercase letter
+    print random_uppercase()
+
+    # Print a random digit
+    print random_digit()
+
+    # Print a random punctuation mark ( includes these chars !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~  )
+    print random_punctuation()
+
+    # Print a random printable char from the concatenation of digits, ascii_letters, punctuation, and whitespaces. 
+    # [might return crazy characters like a Carriage Return, a Vertical Tabulator, or a Form Feed]
+    print random_printable()
 
     # To print a random Chuck Norris joke (Internet connection needed)
     print random_chuck_joke()
@@ -34,7 +50,7 @@ Then import it in your python file
     for i in person:
         print i, person[i]
 
-    # Print a random football team (Internet connection needed)
+    # Get a random football team (Internet connection needed)
     football_team = random_football_team()
     
 ```
