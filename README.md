@@ -29,7 +29,7 @@ Import **tchamba** in your python file and use any of the functions :
     # Print a random punctuation mark ( includes these chars !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~  )
     print random_punctuation()
 
-    # Print a random printable char from the concatenation of digits, ascii_letters, punctuation, and whitespaces. 
+    # Print a random printable char from the concatenation of digits, ascii_letters, punctuation, and whitespaces.
     # [might return crazy characters like a Carriage Return, a Vertical Tabulator, or a Form Feed]
     print random_printable()
 
@@ -52,7 +52,14 @@ Import **tchamba** in your python file and use any of the functions :
 
     # Get a random football team (Internet connection needed)
     football_team = random_football_team()
-    
+
+    # Get a random word (Internet connection needed) or it returns 'potatoes'
+    print random_word()
+
+    # Get a random Wikipedia article (Internet connection needed) or it will return "Python article"
+    article = random_wikipedia_article()
+    print article['title']
+    print article['text']
 ```
 
 ## Contributing
