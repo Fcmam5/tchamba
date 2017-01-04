@@ -76,13 +76,13 @@ def random_word():
 
 def random_wikipedia_article():
     try:
-    response = requests.get("https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=revisions|extracts&exintro=&explaintext&rvprop=content").json()
-    res = response['query']['pages'][response['query']['pages'].keys()[0]]
+        response = requests.get("https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&prop=revisions|extracts&exintro=&explaintext&rvprop=content").json()
+        res = response['query']['pages'][response['query']['pages'].keys()[0]]
 
-    article = {
-        "title": res['title'],
-        "text": res['extract']
-    }
+        article = {
+            "title": res['title'],
+            "text": res['extract']
+        }
 
     except Exception as e:
         article = {
