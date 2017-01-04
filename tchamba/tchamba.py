@@ -5,6 +5,11 @@ import string
 from time import time
 from datetime import datetime
 
+# returns a randomly reordered version of the provided list
+def randomize_list(list=[]):
+    random.shuffle(list)
+    return list
+
 # returns a random timestamp
 def random_timestamp():
     return random.randrange(int(time()))
