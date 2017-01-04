@@ -2,6 +2,22 @@
 import random
 import requests
 import string
+from time import time
+from datetime import datetime
+
+# returns a randomly reordered version of the provided list
+def randomize_list(list=[]):
+    random.shuffle(list)
+    return list
+
+# returns a random timestamp
+def random_timestamp():
+    return random.randrange(int(time()))
+
+# returns a random date since Jan 1st 1970
+# optional date format may be passed
+def random_date(format='%m-%d-%Y %H:%M:%S'):
+    return datetime.fromtimestamp(random_timestamp()).strftime(format)
 
 # returns a random char from the concatenation of ascii_lowercase and ascii_uppercase
 def random_letter():
