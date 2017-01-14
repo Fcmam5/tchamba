@@ -19,6 +19,23 @@ def random_timestamp():
 def random_date(format='%m-%d-%Y %H:%M:%S'):
     return datetime.fromtimestamp(random_timestamp()).strftime(format)
 
+# returns a random string with a given length
+# might return not beatiful results because it uses random_printable
+def random_string_given_len(length)
+    string_rand = ''
+    for i in range(length)
+        string_rand += random_printable()
+    return string_rand
+
+# returns a random string with a random length between the given min_length, max_length
+# might return not beatiful results because it uses random_printable
+def random_string_rand_len(min_length, max_length)
+    string_rand = ''
+    string_length = randint(min_length, max_length)
+    for i in range(string_length)
+        string_rand += random_printable()
+    return string_rand
+
 # returns a random char from the concatenation of ascii_lowercase and ascii_uppercase
 def random_letter():
     return random.choice(string.ascii_letters)
