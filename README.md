@@ -2,7 +2,7 @@
 Tchamba.random, is a real random data genarator (letters, jokes, names...)
 
 ## The idea
-The name was invented by my friends Hammadi Ilyes and Bahri Aimene, and it was a joke. Now [we] are trying to implement it in order to get a random data.
+The name was invented by my friends Hammadi Ilyes and Bahri Aimene, and it was a joke. Now [we] are trying to implement it in order to get random data.
 
 ## Installation
 First install the **tchamba** package
@@ -32,6 +32,14 @@ Import **tchamba** in your python file and use any of the functions :
     # Print a random printable char from the concatenation of digits, ascii_letters, punctuation, and whitespaces.
     # [might return crazy characters like a Carriage Return, a Vertical Tabulator, or a Form Feed]
     print random_printable()
+    
+    # Print a random string with a given length
+    # might return ugly results because it uses random_printable
+    print random_string_given_len(42)
+    
+    # Print a random string with a random length between the given min_length and max_length
+    # might return ugly results because it uses random_printable
+    print random_string_rand_len(1, 20)
 
     # To print a random Chuck Norris joke (Internet connection needed)
     print random_chuck_joke()
@@ -53,10 +61,10 @@ Import **tchamba** in your python file and use any of the functions :
     # Get a random football team (Internet connection needed)
     football_team = random_football_team()
 
-    # Get a random word (Internet connection needed) or it returns 'potatoes'
+    # Print a random word (Internet connection needed) or it returns 'potatoes'
     print random_word()
 
-    # Get a random Wikipedia article (Internet connection needed) or it will return "Python article"
+    # Get and print random Wikipedia article (Internet connection needed) or it will return "Python article"
     article = random_wikipedia_article()
     print article['title']
     print article['text']
@@ -64,14 +72,14 @@ Import **tchamba** in your python file and use any of the functions :
 
 ## Contributing
 If you have an idea, please feel free to submit an issue, or fork this project and add your **awesome_random_function** in [tchamba.py](tchamba/tchamba.py) file.
-I think that we need something cool, funny like this :smile: to use it in our programs, for testing or for fun.
+I think that we need something cool and funny like this :smile: to use in our programs, for testing or for fun.
 
 ## Credits
-This package is using one of the bests APIs on the Web, like:
+This package is using some of the best APIs on the Web, like:
 * [ChuckNorris.io](https://chucknorris.io)
 * [PokeAPI](https://pokeapi.co)
 * [NameFake](http://namefake.com/api)
-* [football teams api](http://api.football-data.org)
+* [Football Teams api](http://api.football-data.org)
 
 ## License
 MIT licensed Done by Fortas Abdeldjalil and all [these awesome contributers](https://github.com/Fcmam5/tchamba/graphs/contributors).
