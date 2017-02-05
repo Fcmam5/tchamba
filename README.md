@@ -1,4 +1,4 @@
-# Tchamba.random
+# Tchamba.random [![Build Status](https://travis-ci.org/Fcmam5/tchamba.svg?branch=master)](https://travis-ci.org/Fcmam5/tchamba)
 Tchamba.random, is a real random data genarator (letters, jokes, names...)
 
 ## The idea
@@ -32,11 +32,11 @@ Import **tchamba** in your python file and use any of the functions :
     # Print a random printable char from the concatenation of digits, ascii_letters, punctuation, and whitespaces.
     # [might return crazy characters like a Carriage Return, a Vertical Tabulator, or a Form Feed]
     print random_printable()
-    
+
     # Print a random string with a given length
     # might return ugly results because it uses random_printable
     print random_string_given_len(42)
-    
+
     # Print a random string with a random length between the given min_length and max_length
     # might return ugly results because it uses random_printable
     print random_string_rand_len(1, 20)
