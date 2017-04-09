@@ -123,3 +123,14 @@ def random_wikipedia_article():
             "text": "Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. The language provides constructs intended to enable writing clear programs on both a small and large scale.\nPython supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library.\nPython interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.\n\n"
         }
     return article
+
+def random_yes_no_maybe():
+    try:
+        answer = requests.get("https://yesno.wtf/api").json()
+    except Exception as e:
+        answer = {
+            "answer": "no",
+            "forced": "true",
+            "image": "https://yesno.wtf/assets/no/13-755222c98795431aa2e7d453ab1e75a1.gif"
+        }
+    return answer

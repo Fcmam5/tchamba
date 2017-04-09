@@ -68,6 +68,12 @@ Import **tchamba** in your python file and use any of the functions :
     article = random_wikipedia_article()
     print article['title']
     print article['text']
+
+    # Get a JSON containing an answer that could be yes, no or maybe. with a .gif image
+    yes_no_answer = random_yes_no_maybe()
+    print yes_no_answer['answer']
+    print yes_no_answer['image']
+
 ```
 
 ## Contributing
